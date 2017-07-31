@@ -1,1 +1,1 @@
-# [vindulafernando.com](http://vindulafernando.com)
+# [vindulafernando.com](http://vindulafernando.com) &middot; [![Build Status](https://travis-ci.org/VindulaF/vindulafernando.com.svg?branch=master)](https://travis-ci.org/VindulaF/vindulafernando.com)
