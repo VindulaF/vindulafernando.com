@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import { format } from 'date-fns'
 import './App.css'
 
 class App extends Component {
@@ -40,10 +41,14 @@ class App extends Component {
 								<strong>Email:</strong> {resume.basics.email}
 								<br />
 								<strong>Twitter:</strong>
-								<a href="http://twitter.com/"> {resume.profiles.twitter}</a>
+								<a href={`http://twitter.com/${resume.profiles.twitter}`}>
+									{' '}{resume.profiles.twitter}
+								</a>
 								<br />
 								<strong>Github:</strong>
-								<a href="http://github.com/"> {resume.profiles.twitter}</a>
+								<a href={`http://github.com/${resume.profiles.github}`}>
+									{' '}{resume.profiles.twitter}
+								</a>
 								<br />
 							</div>
 						</section>
@@ -62,7 +67,8 @@ class App extends Component {
 											{job.position}
 										</strong>
 										<p>
-											{job.startDate} - {job.endDate ? job.endDate : 'Present'}
+											{format(job.startDate, 'YYYY')} -{' '}
+											{job.endDate ? format(job.endDate, 'YYYY') : 'Present'}
 										</p>
 										<p>
 											{job.summary}
@@ -87,7 +93,8 @@ class App extends Component {
 											{degree.area}, {degree.studyType}
 										</h4>
 										<p>
-											{degree.startDate} - {degree.endDate}
+											{format(degree.startDate, 'YYYY')} -{' '}
+											{format(degree.endDate, 'YYYY')}
 										</p>
 										<hr />
 									</div>
