@@ -2,10 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Header from '../../components/Header'
 import About from '../../components/About'
-import WorkExperience from '../../components/WorkExperience'
-import Education from '../../components/Education'
-import Skills from '../../components/Skills'
-import References from '../../components/References'
+import WorkExperienceList from '../../components/WorkExperienceList'
+import EducationList from '../../components/EducationList'
+import SkillList from '../../components/SkillList'
+import ReferenceList from '../../components/ReferenceList'
 
 const Resume = props =>
 	<div className="container">
@@ -14,10 +14,10 @@ const Resume = props =>
 				<Header basics={props.resume.basics} />
 				<hr />
 				<About basics={props.resume.basics} profiles={props.resume.profiles} />
-				<WorkExperience work={props.resume.work} />
-				<Education education={props.resume.education} />
-				<Skills skills={props.resume.skills} />
-				<References references={props.resume.references} />
+				<WorkExperienceList work={props.resume.work} />
+				<EducationList education={props.resume.education} />
+				<SkillList skills={props.resume.skills} />
+				<ReferenceList references={props.resume.references} />
 			</div>
 		</div>
 	</div>

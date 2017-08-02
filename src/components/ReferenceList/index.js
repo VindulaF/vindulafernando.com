@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import ReferenceItem from '../ReferenceItem'
 
 const References = props =>
 	<section className="row">
@@ -9,9 +10,7 @@ const References = props =>
 		<div className="col-md-9">
 			<div className="row-fluid skills">
 				{props.references.map((reference, i) =>
-					<p key={i}>
-						{reference.reference} - <strong>{reference.name}</strong>
-					</p>
+					<ReferenceItem key={i} reference={reference} />
 				)}
 			</div>
 		</div>
