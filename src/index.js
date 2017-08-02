@@ -1,9 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
-import App from './App'
-import JSONResume from './resume.json'
-//import registerServiceWorker from './registerServiceWorker'
+import Resume from './containers/Resume'
+import jsonResume from './resume.json'
 
-ReactDOM.render(<App resume={JSONResume} />, document.getElementById('root'))
-//registerServiceWorker()
+ReactDOM.render(<Resume resume={jsonResume} />, document.getElementById('root'))
