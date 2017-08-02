@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import AreaList from '../AreaList'
 
 const SkillItem = props =>
 	<ul className="col-md-6">
@@ -7,13 +8,7 @@ const SkillItem = props =>
 			<h4>
 				{props.area.name}
 			</h4>
-			<ul>
-				{props.area.keywords.map((keyword, i) =>
-					<li key={i}>
-						{keyword}
-					</li>
-				)}
-			</ul>
+			<AreaList keywords={props.area.keywords} />
 		</li>
 	</ul>
 

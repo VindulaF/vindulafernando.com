@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import ReferenceItem from '../ReferenceItem'
 
-const References = props =>
+const ReferenceList = props =>
 	<section className="row">
 		<header className="col-md-3">
 			<h3>References</h3>
@@ -16,8 +16,8 @@ const References = props =>
 		</div>
 	</section>
 
-References.propTypes = {
+ReferenceList.propTypes = {
 	references: PropTypes.array.isRequired
 }
 
-export default References
+export default ReferenceList
