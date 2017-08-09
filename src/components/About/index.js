@@ -11,14 +11,14 @@ const About = props =>
 			<strong>Phone:</strong> {props.basics.phone} <br />
 			<strong>Email:</strong> {props.basics.email}
 			<br />
-			<strong>Twitter:</strong>
-			<a href={`http://twitter.com/${props.profiles.twitter}`}>
-				{' '}{props.profiles.twitter}
+			<strong>LinkedIn:</strong>
+			<a href={`https://www.linkedin.com/in/${props.profiles.linkedin}`}>
+				{' '}{props.profiles.linkedin}
 			</a>
 			<br />
 			<strong>Github:</strong>
 			<a href={`http://github.com/${props.profiles.github}`}>
-				{' '}{props.profiles.twitter}
+				{' '}{props.profiles.github}
 			</a>
 			<br />
 		</div>

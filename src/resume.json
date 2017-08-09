@@ -12,7 +12,7 @@
 		},
 		"profiles": [
 			{
-				"network": "twitter",
+				"network": "linkedin",
 				"username": "VindulaF"
 			},
 			{
@@ -71,7 +71,7 @@
 	],
 	"profiles": {
 		"github": "VindulaF",
-		"twitter": "VindulaF"
+		"linkedin": "VindulaF"
 	},
 	"skills": [
 		{
